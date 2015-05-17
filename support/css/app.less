@@ -1,0 +1,204 @@
+@import "colors";
+
+
+/***********************
+		Variables
+************************/
+@footerHeight: 100px;
+@lgSidePadding:	150px;
+@mdSidePadding: 100px;
+@smSidePadding: 75px;
+@screen-sm:	768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+/***********************
+		Sticky Footer
+************************/
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -@footerHeight;
+  padding: 0 0 @footerHeight;
+}
+
+.footer {
+  height: @footerHeight;
+}
+
+
+/***********************
+		Navbar
+************************/
+.navbar
+{
+	padding: 30px 20px;
+	border-style: none;
+	border-radius: 0px;
+	background-color: @materialOrange;
+	color: @white;
+	margin-bottom: 0px;
+
+	li
+	{
+		line-height: 50px;
+	}
+
+	.nav-link
+	{
+		#home-link, #deals-link
+		{
+			color: @white;
+		}
+	}
+
+	.username-button
+	{
+		margin-right: 10px;
+	}
+	.username {
+		margin-right: 10px;
+		color: @white;
+	}
+
+	.navbar-brand
+	{
+		color: @white;
+	}
+
+	a
+	{
+		color: @white;
+		@hover: @white;
+	}
+}
+
+.navbar-inverse
+{
+	a
+	{
+		color:@white;
+	}
+}
+
+
+
+/***********************
+		UI
+************************/
+.back-button
+{
+	margin-bottom: 15px;
+}
+
+.no-margin-bottom
+{
+	margin-bottom: 0px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+/***********************
+		Intro
+************************/
+.login-panel
+{
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 50px 50px;
+	width: 60%;
+}
+
+.intro
+{
+	background-color: @materialOrange;
+	color: @white;
+	img
+	{
+		width: 75%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.jumbotron
+	{
+		background-color: @materialOrange;
+	}
+}
+
+/***********************
+		Containers
+************************/
+.container-fluid
+{
+	padding: 0px 0px;
+}
+
+.main-view
+{
+	.section
+	{
+		padding-right: @lgSidePadding;
+		padding-left: @lgSidePadding;	
+	}
+
+	@media screen and (max-width: @screen-md)
+	{
+		.section
+		{
+			padding-right: @mdSidePadding;
+			padding-left: @mdSidePadding;	
+		}
+	}
+	@media screen and (max-width: @screen-sm)
+	{
+		.section
+		{
+			padding-right: @smSidePadding;
+			padding-left: @smSidePadding;	
+		}
+	}
+}
+
+
+/***********************
+		Footer
+************************/
+.footer
+{
+
+	.container-fluid
+	{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.copyright
+	{
+		background-color: @lightGray;
+		color: @secondaryText;
+		line-height: @footerHeight;
+	}
+
+	.footer-section
+	{
+		//padding: 50px 0px;
+		height: @footerHeight;
+		//margin-top: -(@footerHeight / 2);
+		a
+		{
+			color: @materialOrange;
+			text-decoration: none;
+		}
+	}
+
+}

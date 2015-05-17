@@ -1,0 +1,24 @@
+(function() {
+	'use strict';
+
+	angular
+		.module('app.core')
+		.factory('mockserver', mockserver);
+
+	function mockserver() {
+
+		var service = {
+			getLocalDeals: getLocalDeals,
+		};
+
+		return service;
+
+
+		function getLocalDeals() {
+			var url = 'http://45.55.252.241/api/results.php?country=united%20kingdom&city=reading';
+			//return sendGetRequest(url);
+            return [{"id":"74","name":"25% off entire order","multipleLocations":"1","restaurant":"Ask Italian","link":"","description":"","code":"","expiry":"1000","heat":"24","country":"United Kingdom","city":"Reading","added":"2015-04-26 20:28:32","expiredCount":"3","hasExpired":"0","totalVotes":"95","image_url":"http:\/\/45.55.252.241\/images\/pasta.jpg"},{"id":"141","name":"25% off entire order","multipleLocations":"1","restaurant":"Gourmet Burger Kitchen","link":"","description":"Expires 19th May","code":"","expiry":"1000","heat":"8","country":"United Kingdom","city":"Reading","added":"2015-04-28 11:40:42","expiredCount":"6","hasExpired":"0","totalVotes":"31","image_url":"http:\/\/45.55.252.241\/images\/burger.jpg"},{"id":"140","name":"50% off all mains","multipleLocations":"1","restaurant":"zizi","link":"zizi.co.uk\/offers","description":"","code":"","expiry":"1000","heat":"7","country":"United Kingdom","city":"Reading","added":"2015-04-28 11:38:35","expiredCount":"0","hasExpired":"0","totalVotes":"11","image_url":"http:\/\/45.55.252.241\/images\/pizza2.jpg"},{"id":"76","name":"buy one get one for a pound","multipleLocations":"0","restaurant":"Bella Italia","link":"","description":"","code":"","expiry":"1000","heat":"6","country":"United Kingdom","city":"Reading","added":"2015-04-26 20:30:54","expiredCount":"1","hasExpired":"0","totalVotes":"10","image_url":"http:\/\/45.55.252.241\/images\/pasta2.jpg"},{"id":"142","name":"25% off \u00a325 spend","multipleLocations":"1","restaurant":"Papa John's","link":"","description":"Use code PJFES25OFF","code":"","expiry":"1000","heat":"4","country":"United Kingdom","city":"Reading","added":"2015-04-28 11:43:32","expiredCount":"0","hasExpired":"0","totalVotes":"4","image_url":"http:\/\/45.55.252.241\/images\/pizza3.jpg"},{"id":"399","name":"2 for \u00a315","multipleLocations":"1","restaurant":"red hot buffet","link":"http:\/\/local.amazon.co.uk\/East-Manchester\/B00V3B7AMQ\/international-buffet-dining-at-seven-locations-nationwide","description":"","code":"","expiry":"1000","heat":"3","country":"United Kingdom","city":"Reading","added":"2015-05-05 12:39:40","expiredCount":"0","hasExpired":"0","totalVotes":"6","image_url":"http:\/\/45.55.252.241\/images\/jacket_potato.jpg"},{"id":"398","name":"Buy one pizza, get the second half price","multipleLocations":"1","restaurant":"Domino's","link":"","description":"Expires 28\/06\/15","code":"","expiry":"1000","heat":"2","country":"United Kingdom","city":"Windsor","added":"2015-05-04 22:14:48","expiredCount":"0","hasExpired":"0","totalVotes":"2","image_url":"http:\/\/45.55.252.241\/images\/pizza2.jpg"},{"id":"411","name":"\u00a315 off \u00a330 spend","multipleLocations":"1","restaurant":"Dominos","link":"www.dominos.co.uk","description":"Until Sun 10th May","code":"RJRMEIGC","expiry":"1000","heat":"2","country":"United Kingdom","city":"Greenford","added":"2015-05-07 10:20:55","expiredCount":"0","hasExpired":"0","totalVotes":"2","image_url":"http:\/\/45.55.252.241\/images\/pizza.jpg"},{"id":"77","name":"buy 1 get 1 for \u00a32.50","multipleLocations":"1","restaurant":"Prezzo","link":"","description":"","code":"","expiry":"1000","heat":"1","country":"United Kingdom","city":"Reading","added":"2015-04-26 20:31:31","expiredCount":"1","hasExpired":"0","totalVotes":"21","image_url":"http:\/\/45.55.252.241\/images\/pizza3.jpg"},{"id":"72","name":"3 course carvery from \u00a323","multipleLocations":"0","restaurant":"Hilton Newbury Centre","link":"","description":"","code":"","expiry":"1000","heat":"0","country":"United Kingdom","city":"Reading","added":"2015-04-26 20:05:21","expiredCount":"0","hasExpired":"0","totalVotes":"6","image_url":"http:\/\/45.55.252.241\/images\/roast.jpg"},{"id":"367","name":"Free \u00a37.95 garlic bread with 2 or more Chicken\/Ribs main","multipleLocations":"1","restaurant":"the harvester","link":"","description":"","code":"","expiry":"1000","heat":"0","country":"United Kingdom","city":"Reading","added":"2015-05-01 12:37:05","expiredCount":"1","hasExpired":"0","totalVotes":"6","image_url":"http:\/\/45.55.252.241\/images\/chicken.jpg"},{"id":"75","name":"Buy one Get one free on Tuesdays","multipleLocations":"0","restaurant":"domino's","link":"","description":"","code":"","expiry":"1000","heat":"-1","country":"United Kingdom","city":"Reading","added":"2015-04-26 20:29:29","expiredCount":"0","hasExpired":"0","totalVotes":"6","image_url":"http:\/\/45.55.252.241\/images\/pizza3.jpg"}];
+		}
+
+	}
+})();
